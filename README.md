@@ -19,6 +19,9 @@
 - code coverage: codacy.com
 - monitor on: https://ronerlih.loggly.com/search?terms=tag:heroku&from=-20m&until=now&source_group=&newtab=1#terms=&from=2020-11-07T12:03:00.296Z&until=2020-11-07T13:03:00.296Z&source_group=
 
+## diagram expmles: 
+!["assets/PROJECT-02-diagrams-templates.png"](assets/PROJECT-02-diagrams-templates.png)
+
 ## To-Do:
 - write tests (Jest / mocha+chai)
    - send test reports to code covarage 
