@@ -4,6 +4,8 @@ module.exports = function(sequelize, DataTypes) {
          type: DataTypes.STRING,
          validate: { len: [1, 500] }
       }
+   },{
+      carset: "utf8",
    });
    return Test;
 };
