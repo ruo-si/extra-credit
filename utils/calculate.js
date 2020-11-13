@@ -88,3 +88,5 @@ const jetBlueCard = function (num1) {
 
 jetBlueCard(400);
 
+module.exports = amexCard, citiCard, jetBlueCard;
+
