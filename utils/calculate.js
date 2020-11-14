@@ -1,31 +1,10 @@
+// const { values } = require("sequelize/types/lib/operators");
+
 const userSpendBtn = $("#text-enter-button");
 
 const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 
-
-// This function handles events where one button is clicked
-$(userSpendBtn).on("click", (event) => {
-   event.preventDefault();
-
- 
-
-   // This line grabs the input from the textbox
-   const userSpendInput = $("#user-spend-input").val();
-
-
-        
-   console.log(`money spent: ${userSpendInput}`);
-   spendAmountSaved.push(userSpendInput);
-   console.log(spendAmountSaved);
-
-   localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
-
-
-
-            
-});
-
-
+// =======================================================================
 
 const amexCard = function (num1) {
    const cashBack = function (num1) {
@@ -55,7 +34,7 @@ const amexCard = function (num1) {
 
 };
 
-amexCard(1000);
+// amexCard(1000);
 
 const citiCard = function (num1) {
    const cashBack = function (num1) {
@@ -85,7 +64,7 @@ const citiCard = function (num1) {
 
 };
 
-citiCard(600);
+// citiCard(600);
 
 const jetBlueCard = function (num1) {
    const cashBack = function (num1) {
@@ -115,7 +94,38 @@ const jetBlueCard = function (num1) {
 
 };
 
-jetBlueCard(4000);
+// jetBlueCard(4000);
 
-module.exports = amexCard, citiCard, jetBlueCard;
+// ================================================================
+
+// This function handles events where one button is clicked
+const cardPerkCalc = $(userSpendBtn).on("click", (event) => {
+   event.preventDefault();
+ 
+  
+ 
+   // This line grabs the input from the textbox
+   const userSpendInput = $("#user-spend-input").val();
+ 
+ 
+         
+   console.log(`money spent: ${userSpendInput}`);
+   spendAmountSaved.push(userSpendInput);
+   console.log(spendAmountSaved);
+ 
+   localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
+ 
+
+   amexCard(userSpendInput);
+   citiCard(userSpendInput);
+   jetBlueCard(userSpendInput);
+   console.log(userSpendInput);
+
+
+ 
+ 
+             
+});
+
+module.exports = amexCard, citiCard, jetBlueCard, cardPerkCalc;
 
