@@ -3,27 +3,27 @@ const userSpendBtn = $("#text-enter-button");
 const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 
 
-    // This function handles events where one button is clicked
-    $(userSpendBtn).on("click", function(event) {
-        event.preventDefault();
+// This function handles events where one button is clicked
+$(userSpendBtn).on("click", (event) => {
+   event.preventDefault();
 
  
 
-        // This line grabs the input from the textbox
-        let userSpendInput = $("#user-spend-input").val();
+   // This line grabs the input from the textbox
+   const userSpendInput = $("#user-spend-input").val();
 
 
         
-        console.log(`money spent: ${userSpendInput}`)
-        spendAmountSaved.push(userSpendInput);
-        console.log(spendAmountSaved);
+   console.log(`money spent: ${userSpendInput}`);
+   spendAmountSaved.push(userSpendInput);
+   console.log(spendAmountSaved);
 
-        localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
+   localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
 
 
 
             
-        });
+});
 
 
 const amexCard = function (num1) {
