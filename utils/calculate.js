@@ -1,3 +1,31 @@
+const userSpendBtn = $("#text-enter-button");
+
+const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
+
+
+    // This function handles events where one button is clicked
+    $(userSpendBtn).on("click", function(event) {
+        event.preventDefault();
+
+ 
+
+        // This line grabs the input from the textbox
+        let userSpendInput = $("#user-spend-input").val();
+
+
+        
+        console.log(`money spent: ${userSpendInput}`)
+        spendAmountSaved.push(userSpendInput);
+        console.log(spendAmountSaved);
+
+        localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
+
+
+
+            
+        });
+
+
 const amexCard = function (num1) {
    const cashBack = function (num1) {
       const num2 = .02;
@@ -26,7 +54,7 @@ const amexCard = function (num1) {
 
 };
 
-amexCard(400);
+amexCard(1000);
 
 const citiCard = function (num1) {
    const cashBack = function (num1) {
@@ -56,7 +84,7 @@ const citiCard = function (num1) {
 
 };
 
-citiCard(400);
+citiCard(600);
 
 const jetBlueCard = function (num1) {
    const cashBack = function (num1) {
@@ -86,7 +114,7 @@ const jetBlueCard = function (num1) {
 
 };
 
-jetBlueCard(400);
+jetBlueCard(4000);
 
 module.exports = amexCard, citiCard, jetBlueCard;
 
