@@ -1,4 +1,4 @@
-// user land on page (routes)
+// user land on page (routes) change
 
 // set up buttons with event listeners to make a selection
 
