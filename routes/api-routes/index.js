@@ -1,7 +1,7 @@
-const express = require("express");
+const router = require("express").Router();
 const commentsRoute = require("./comments");
-const router = express.Router();
 
+// go to /api/comments
 router.use("/comments", commentsRoute);
 
 module.exports = router;
