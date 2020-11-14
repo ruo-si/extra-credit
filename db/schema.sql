@@ -7,14 +7,29 @@ CREATE DATABASE test_db;
 
 -- USE extra_credit_db;
 
--- CREATE TABLE credit_card (
+
+-- -- SEARCH HISTORY --
+-- CREATE TABLE search_history(
+--     id INT NOT NULL AUTO_INCREMENT,
+--     search_price INTEGER,
+--     PRIMARY KEY (id)
+-- );
+
+-- WALLET --
+
+-- CREATE TABLE wallet (
 --   id INT NOT NULL AUTO_INCREMENT,
 --   cc_name VARCHAR(45) NOT NULL,
---   miles INT NULL,
---   reward INT NULL,
---   cash_back NULL,
 --   PRIMARY KEY (id)
 -- );
+
+-- FACTS --
+-- CREATE TABLE facts_library (
+--   id INT NOT NULL AUTO_INCREMENT,
+--   fact VARCHAR(400) NOT NULL,
+--   PRIMARY KEY (id)
+-- );
+
 
 ------ uncomment below this line for phase 2 development -------
 

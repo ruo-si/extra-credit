@@ -36,7 +36,7 @@ app.use(htmlRoutes);
 // error handling
 app.use(errorHandler);
 
-// drops all tables on eevery restart
+// drops all tables on every restart
 db.sequelize.sync({ force: true }).then(async () => {
    // seed db
    await seed(db.Test);

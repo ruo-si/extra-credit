@@ -1,7 +1,6 @@
 <div class="col-md-12 text-center enter_section ">
    <span>
-      (Total comments:
-      {{getLength comments }})
+      (Total comments: {{getLength comments }})
    </span>
    <form action="/api/comments/create"
          method="POST">
@@ -11,6 +10,7 @@
              value=""
              placeholder="add your comment"
              id="enter_text">
+             
       <button type="submit"
               class="btn btn-dark"
               id="text-enter-button">comment</button>
