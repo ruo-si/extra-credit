@@ -58,59 +58,74 @@ const citiDCB = function(num1) {
 citiDCB(1000);
 
 const jetBluePlus = function(num1) {
-    const cashBack = function(num1) {
-        const num2 = .04;
-        const result = num1 * num2;
-        console.log("$" + result.toFixed(2));
-        return result.toFixed(2);
-    };
-    cashBack(num1);
+    // const cashBack = function(num1) {
+    //    const num2 = .04;
+    //    const result = num1 * num2;
+    //    console.log("$" + result.toFixed(2));
+    //    return result.toFixed(2);
+    // };
+    // cashBack(num1);
 
-    const rewardsEarned = function(num1) {
-        const num2 = .80;
+    const JetBlueAirways = function(num1) {
+        const num2 = 6;
         const result = num1 * num2;
         console.log(result.toFixed(2) + " points");
         return result.toFixed(2);
     };
-    rewardsEarned(num1);
+    JetBlueAirways(num1);
 
-    const milesEarned = function(num1) {
-        const num2 = 1.10;
+    const JetBlueAirwaysInFlight = function(num1) {
+        const num2 = 6;
         const result = num1 * num2;
         console.log(result.toFixed(2) + " miles");
         return result.toFixed(2);
     };
-    milesEarned(num1);
+    JetBlueAirwaysInFlight(num1);
 
+    const JetBlueResturant = function(num1) {
+        const num2 = 2;
+        const result = num1 * num2;
+        console.log(result.toFixed(2) + " miles");
+        return result.toFixed(2);
+    };
+    JetBlueResturant(num1);
+
+    const JetBlueGrocery = function(num1) {
+        const num2 = 2;
+        const result = num1 * num2;
+        console.log(result.toFixed(2) + " miles");
+        return result.toFixed(2);
+    };
+    JetBlueGrocery(num1);
 
 };
 
 jetBluePlus(600);
 
 const amexGreen = function(num1) {
-    const cashBack = function(num1) {
-        const num2 = .03;
+    const travel = function(num1) {
+        const num2 = 3;
         const result = num1 * num2;
         console.log("$" + result.toFixed(2));
         return result.toFixed(2);
     };
-    cashBack(num1);
+    travel(num1);
 
-    const rewardsEarned = function(num1) {
-        const num2 = .85;
+    const transit = function(num1) {
+        const num2 = 3;
         const result = num1 * num2;
         console.log(result.toFixed(2) + " points");
         return result.toFixed(2);
     };
-    rewardsEarned(num1);
+    transit(num1);
 
-    const milesEarned = function(num1) {
-        const num2 = 1.15;
+    const resturants = function(num1) {
+        const num2 = 3;
         const result = num1 * num2;
         console.log(result.toFixed(2) + " miles");
         return result.toFixed(2);
     };
-    milesEarned(num1);
+    resturants(num1);
 
 
 };
