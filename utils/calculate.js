@@ -26,6 +26,7 @@ $(userSpendBtn).on("click", (event) => {
 });
 
 
+
 const amexCard = function (num1) {
    const cashBack = function (num1) {
       const num2 = .02;
