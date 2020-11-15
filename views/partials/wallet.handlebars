@@ -1,10 +1,46 @@
-<div>
-    {{!-- for each card saved in the wallet --}}
-    {{#each walletCard }}
-    <div>{{ cardName }}</div>
-    <div>{{ miles }}</div>
-    <div>{{ rewards points }}</div>
-    <div>{{ cashback }}</div>
-    {{/each}}
+<!-- my wallet modal button -->
+<button class="label" data-toggle="tooltip" data-placement="bottom" title="My Wallet"><a href="#wallet" rel="modal:open"
+        class="category btn"><i class="fas fa fa-wallet fa-3x"></i></a></button>
 
-</div>>
+<!-- my wallet modal -->
+<div id="wallet" class="modal">
+
+    <!-- table start -->
+    <table class="table table-hover table-responsive">
+        <thead>
+            <tr>
+                <th scope="col"> </th>
+                <th scope="col">Card</th>
+                <th scope="col">Miles</th>
+                <th scope="col">Rewards</th>
+                <th scope="col">Cashback</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Amex</td>
+                <td>200</td>
+                <td>5x</td>
+                <td>4%</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jetblue</td>
+                <td>30</td>
+                <td>2x</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Citi plus</td>
+                <td>50</td>
+                <td>5x</td>
+                <td>5%</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- close button -->
+    <a href="#" rel="modal:close">Close</a>
+</div>

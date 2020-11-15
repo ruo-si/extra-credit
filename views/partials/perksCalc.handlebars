@@ -1,0 +1,51 @@
+    <!-- perks calculator button -->
+    <button class="label" data-toggle="tooltip" data-placement="bottom" title="Calculator"><a href="#perks"
+            rel="modal:open" class="category btn"><i class="fas fa fa-calculator fa-3x"></i></a></button>
+
+    <!-- perks calculator modal -->
+    <div id="perks" class="modal">
+
+        <!-- input field for price number -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="enter the amount to spend" aria-label="spend"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Calculate</button>
+            </div>
+        </div>
+
+        <!-- table start -->
+        <table class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col"> </th>
+                    <th scope="col">Amex</th>
+                    <th scope="col">Jetblue</th>
+                    <th scope="col">Citi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Miles</th>
+                    <td>5x</td>
+                    <td>3x</td>
+                    <td>2x</td>
+                </tr>
+                <tr>
+                    <th scope="row">Rewards</th>
+                    <td>300</td>
+                    <td> </td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cashback</th>
+                    <td> </td>
+                    <td>5%</td>
+                    <td>1000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- close button -->
+        <a href="#" rel="modal:close">Close</a>
+    </div>

@@ -101,20 +101,20 @@ const jetBlueCard = function (num1) {
 // This function handles events where one button is clicked
 const cardPerkCalc = $(userSpendBtn).on("click", (event) => {
    event.preventDefault();
- 
-  
- 
+
+
+
    // This line grabs the input from the textbox
    const userSpendInput = $("#user-spend-input").val();
- 
- 
-         
+
+
+
    console.log(`money spent: ${userSpendInput}`);
    spendAmountSaved.push(userSpendInput);
    console.log(spendAmountSaved);
- 
+
    localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
- 
+
 
    amexCard(userSpendInput);
    citiCard(userSpendInput);
@@ -122,9 +122,8 @@ const cardPerkCalc = $(userSpendBtn).on("click", (event) => {
    console.log(userSpendInput);
 
 
- 
- 
-             
+
+
 });
 
 module.exports = amexCard, citiCard, jetBlueCard, cardPerkCalc;
