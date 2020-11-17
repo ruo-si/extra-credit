@@ -24,7 +24,7 @@ const amexCard = function (num1) {
       const num2 = 1.25;
       const result = num1 * num2;
       console.log(result.toFixed(2) + " miles");
-      return result.toFixed(2) + " miles";
+      return result.toFixed(2);
    };
 
    return [cashBack(), rewardsEarned(), milesEarned()];
