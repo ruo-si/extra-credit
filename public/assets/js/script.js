@@ -47,16 +47,20 @@ $(document).ready(() => {
 
 
       const amexResult = amexCard(userSpendInput);
+      const citiResult = citiCard(userSpendInput);
+      const jetBlueResult = jetBlueCard(userSpendInput);
 
-      console.log(amexResult[0]);
-      console.log(amexResult[1]);
-      console.log(amexResult[2]);
+      // console.log(amexResult[0]);
+      // console.log(amexResult[1]);
+      // console.log(amexResult[2]);
       //console.log(amexCard(userSpendInput));
       //citiCard(userSpendInput);
       // jetBlueCard(userSpendInput);
       // console.log(userSpendInput);
 
       $("tbody").append(`<tr><th>1</th><td>Amex</td><td>${amexResult[0]}</td><td>${amexResult[1]}</td><td>${amexResult[2]}</td></tr>`);
+      $("tbody").append(`<tr><th>2</th><td>Citi</td><td>${citiResult[0]}</td><td>${citiResult[1]}</td><td>${citiResult[2]}</td></tr>`);
+      $("tbody").append(`<tr><th>3</th><td>JetBlue</td><td>${jetBlueResult[0]}</td><td>${jetBlueResult[1]}</td><td>${jetBlueResult[2]}</td></tr>`);
 
       // <tr>
       //              <th scope="row">1</th>
