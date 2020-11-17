@@ -6,7 +6,7 @@ const db = require("../../models");
 router.use("/apiRoutes", apiRoutes);
 
 router.get("/facts", (req, res)=> {
-   db.FactsLibrary.findOne({}).then(
+   db.FactsLibrary.findAll({}).then(
       data => res.json(data)
    );
 
