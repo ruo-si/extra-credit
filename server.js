@@ -5,18 +5,17 @@ const db = require("./models");
 const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
 
+// Set Port
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-// good place for a logging middleware
+// Middleware handling
 
-// Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
-
-// Parse application body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Helper code
 const exphbs = require("express-handlebars");
 const helpers = require("./views/helpers");
 
@@ -32,21 +31,14 @@ app.engine(
 
 app.set("view engine", "handlebars");
 
-// Mock Data
-// const cardsCalcArray = [
-//    { name: "amex", miles: 10, rewards: 3, cashback: 4 },
-//    { name: "jetblue", miles: 4, rewards: 8, cashback: 6 },
-//    { name: "citi", miles: 1, rewards: 1, cashback: 5 },
-// ];
-
+// Routing
 app.use("/api", apiRoutes);
 app.use(htmlRoutes);
 
-// error handling
+// Error handling
 app.use(errorHandler);
 
-
-// drops all tables on every restart
+// Eqeualize and app listening every restart
 const sync = true;
 db.sequelize.sync({ force: sync }).then(async () => {
    
@@ -59,8 +51,3 @@ db.sequelize.sync({ force: sync }).then(async () => {
       console.log("🌎 => live on http://localhost:%s", PORT);
    });
 });
-
-
-// app.listen(PORT, () => {
-//    console.log("🌎 => live on http://localhost:%s", PORT);
-// });

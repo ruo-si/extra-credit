@@ -13,7 +13,7 @@ $("#fun-fact-btn").on("click", () => {
       type: "GET",
    }).then(
       (data) => {
-         console.log(data)
+         console.log(data);
          // set up appending data
          const factContent = `<p><mark><strong>Fact: ${data.id } : </strong></mark> ${data.fact}</p>`;
  
