@@ -28,9 +28,6 @@ $(document).ready(() => {
       );
    });
 
-   // const userSpendBtn = $("#text-enter-button");
-
-   // const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 
    $(userSpendBtn).on("click", (event) => {
       event.preventDefault();
@@ -49,17 +46,17 @@ $(document).ready(() => {
       localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
 
 
-      const test = amexCard(userSpendInput);
+      const amexResult = amexCard(userSpendInput);
 
-      console.log(test[0]);
-      console.log(test[1]);
-      console.log(test[2]);
+      console.log(amexResult[0]);
+      console.log(amexResult[1]);
+      console.log(amexResult[2]);
       //console.log(amexCard(userSpendInput));
       //citiCard(userSpendInput);
       // jetBlueCard(userSpendInput);
       // console.log(userSpendInput);
 
-      $("tbody").append(`<tr><th>1</th><td>Amex</td><td>${test[0]}</td><td>${test[1]}</td><td>${test[2]}</td></tr>`);
+      $("tbody").append(`<tr><th>1</th><td>Amex</td><td>${amexResult[0]}</td><td>${amexResult[1]}</td><td>${amexResult[2]}</td></tr>`);
 
       // <tr>
       //              <th scope="row">1</th>

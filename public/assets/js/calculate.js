@@ -1,6 +1,6 @@
-// const userSpendBtn = $("#text-enter-button");
+const userSpendBtn = $("#text-enter-button");
 
-// const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
+const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 
 // =======================================================================
 
@@ -88,29 +88,29 @@ const jetBlueCard = function (num1) {
 // ================================================================
 
 // This function initiates the calculating functions for each card upon each click
-const cardPerkCalc = $(userSpendBtn).on("click", (event) => {
-   event.preventDefault();
+// const cardPerkCalc = $(userSpendBtn).on("click", (event) => {
+//    event.preventDefault();
 
 
 
-   // This line grabs the input from the textbox
-   const userSpendInput = $("#user-spend-input").val();
+//    // This line grabs the input from the textbox
+//    const userSpendInput = $("#user-spend-input").val();
 
 
 
-   console.log(`money spent: ${userSpendInput}`);
-   spendAmountSaved.push(userSpendInput);
-   console.log(spendAmountSaved);
+//    console.log(`money spent: ${userSpendInput}`);
+//    spendAmountSaved.push(userSpendInput);
+//    console.log(spendAmountSaved);
 
-   localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
+//    localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
 
 
-   amexCard(userSpendInput);
-   citiCard(userSpendInput);
-   jetBlueCard(userSpendInput);
-   console.log(userSpendInput);
+//    amexCard(userSpendInput);
+//    citiCard(userSpendInput);
+//    jetBlueCard(userSpendInput);
+//    console.log(userSpendInput);
 
-});
+// });
 
-//module.exports = amexCard, citiCard, jetBlueCard, cardPerkCalc;
+// module.exports = amexCard, citiCard, jetBlueCard, cardPerkCalc;
 
