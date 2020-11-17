@@ -7,10 +7,10 @@
 
         <!-- input field for price number -->
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="enter the amount to spend" aria-label="spend"
+            <input type="number" id= "user-spend-input" class="form-control" placeholder="enter the amount to spend" aria-label="spend"
                 aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Calculate</button>
+                <button id= "text-enter-button" class="btn btn-outline-secondary" type="button">Calculate</button>
             </div>
         </div>
 
@@ -54,3 +54,8 @@
         <!-- close button -->
         <a href="#" rel="modal:close">Close</a>
     </div>
+  <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../utils/calculate.js"></script>
