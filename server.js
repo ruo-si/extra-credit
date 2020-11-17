@@ -1,8 +1,8 @@
 const express = require("express");
-// const apiRoutes = require("./routes/api-routes");
-// const htmlRoutes = require("./routes/html-routes");
-// const db = require("./models");
-// const seed = require("./utils/seed");
+const apiRoutes = require("./routes/api-routes");
+const htmlRoutes = require("./routes/html-routes");
+const db = require("./models");
+const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
 
 const PORT = process.env.PORT || 3000;
@@ -39,30 +39,28 @@ app.set("view engine", "handlebars");
 //    { name: "citi", miles: 1, rewards: 1, cashback: 5 },
 // ];
 
-// app.use("/api", apiRoutes);
-// app.use(htmlRoutes);
-
-// Routes
-app.get("/", (req, res) => {
-   res.render("index");
-});
+app.use("/api", apiRoutes);
+app.use(htmlRoutes);
 
 // error handling
 app.use(errorHandler);
 
 
 // drops all tables on every restart
-// db.sequelize.sync({ force: true }).then(async () => {
+const sync = true;
+db.sequelize.sync({ force: sync }).then(async () => {
    
-//    // seed db
-//    await seed(extra_credit_db);
+   if(sync) {
+      // seed db
+      await seed(db);
+   }
 
-//    app.listen(PORT, () => {
-//       console.log("🌎 => live on http://localhost:%s", PORT);
-//    });
-// });
-
-
-app.listen(PORT, () => {
-   console.log("🌎 => live on http://localhost:%s", PORT);
+   app.listen(PORT, () => {
+      console.log("🌎 => live on http://localhost:%s", PORT);
+   });
 });
+
+
+// app.listen(PORT, () => {
+//    console.log("🌎 => live on http://localhost:%s", PORT);
+// });
