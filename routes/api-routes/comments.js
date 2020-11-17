@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../../models");
+// const db = require("../../models");
 
 // // /api/commnets/create 
 // // post comment route -> back to index
