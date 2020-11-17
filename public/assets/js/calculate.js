@@ -10,21 +10,21 @@ const amexCard = function (num1) {
       const num2 = .02;
       const result = num1 * num2;
       console.log("$" + result.toFixed(2));
-      return result.toFixed(2);
+      return "$" + result.toFixed(2);
    };
 
    const rewardsEarned = function () {
       const num2 = .75;
       const result = num1 * num2;
       console.log(result.toFixed(2) + " points");
-      return result.toFixed(2);
+      return result.toFixed(2) + " points";
    };
 
    const milesEarned = function () {
       const num2 = 1.25;
       const result = num1 * num2;
       console.log(result.toFixed(2) + " miles");
-      return result.toFixed(2);
+      return result.toFixed(2) + " miles";
    };
 
    return [cashBack(), rewardsEarned(), milesEarned()];
@@ -87,30 +87,7 @@ const jetBlueCard = function (num1) {
 
 // ================================================================
 
-// This function initiates the calculating functions for each card upon each click
-// const cardPerkCalc = $(userSpendBtn).on("click", (event) => {
-//    event.preventDefault();
-
-
-
-//    // This line grabs the input from the textbox
-//    const userSpendInput = $("#user-spend-input").val();
-
-
-
-//    console.log(`money spent: ${userSpendInput}`);
-//    spendAmountSaved.push(userSpendInput);
-//    console.log(spendAmountSaved);
-
-//    localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
-
-
-//    amexCard(userSpendInput);
-//    citiCard(userSpendInput);
-//    jetBlueCard(userSpendInput);
-//    console.log(userSpendInput);
-
-// });
+// const amexFuncArray = [amexCard.cashBack(userSpendInput), amexCard.rewardsEarned(userSpendInput), amexCard.milesEarned(userSpendInput)];
 
 // module.exports = amexCard, citiCard, jetBlueCard, cardPerkCalc;
 
