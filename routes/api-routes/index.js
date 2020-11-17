@@ -1,7 +1,16 @@
 const router = require("express").Router();
-const commentsRoute = require("./comments");
+const apiRoutes = require("./apiRoutes");
+const db = require("../../models")
 
-// go to /api/comments
-router.use("/comments", commentsRoute);
+// go to /api/apiRoutes
+router.use("/apiRoutes", apiRoutes);
+
+router.get("/facts", function(req, res){
+    db.FactsLibrary.findOne({}).then(
+        data => res.json(data)
+    )
+
+    console.log("here")
+});
 
 module.exports = router;

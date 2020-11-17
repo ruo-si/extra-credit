@@ -1,12 +1,18 @@
 <!-- fun fact modal button -->
-<button class="label" data-toggle="tooltip" data-placement="bottom" title="Fun Fact"><a href="#ex5" rel="modal:open"
-        class="category btn"><i class="fas fa fa-book fa-3x"></i></a></label>
+<button id="fun-fact-btn" class="label hi" data-toggle="tooltip" data-placement="bottom" title="Fun Fact"><a href="#funFact" rel="modal:open"
+        class="category btn"><i class="fas fa fa-book fa-3x"></i></a>
 
     <!-- fun fact modal -->
-    <div id="ex5" class="modal">
+    <div id="funFact" class="modal">
 
-        <p>Fact #9 : A credit scrore is a numbesdfasr out of 850.</p>
+        {{!-- <p>Fact #9 : A credit scrore is a numbesdfasr out of 850.</p> --}}
+        <p>Fact # {{ this.id }} : {{ this.fact }}</p>
+
+        <div>{{ data }}</div>
 
         <!-- close button -->
         <a href="#" rel="modal:close">Close</a>
+    
     </div>
+
+    

@@ -1,7 +1,11 @@
-module.exports = function(table) {
-   if (process.env !== "production") {
+module.exports = function(db) {
       console.log("\n🚀 init table seed");
-      return table.create({ comment: "🚀 init" });
-   }
-   return Promise.resolve();
+      
+      return Promise.all([
+         db.FactsLibrary.create({ fact: `"best way to use credit sparingly and responsibility` }),
+         db.FactsLibrary.create({ fact: `credit scrores is a nukber influenced by fife factors: payment history, 
+         credit utilization, bank account history, account types, inquiries` })
+      ])
+      
+
 };
