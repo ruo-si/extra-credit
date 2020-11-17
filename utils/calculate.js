@@ -1,6 +1,8 @@
 // const { values } = require("sequelize/types/lib/operators");
+// const perkCalcFile = require("../views/partials/perksCalc.handlebars");
 
 const userSpendBtn = $("#text-enter-button");
+// const userSpendBtn = document.querySelector("#text-enter-button");
 
 const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 

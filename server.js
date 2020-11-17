@@ -4,6 +4,7 @@ const express = require("express");
 // const db = require("./models");
 // const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
+const calculate = require("./utils/calculate");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -49,6 +50,8 @@ app.get("/", (req, res) => {
 
 // error handling
 app.use(errorHandler);
+
+app.use(calculate);
 
 
 // drops all tables on every restart
