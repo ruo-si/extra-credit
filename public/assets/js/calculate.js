@@ -1,6 +1,6 @@
-const userSpendBtn = $("#text-enter-button");
+// const userSpendBtn = $("#text-enter-button");
 
-const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
+// const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 
 // =======================================================================
 

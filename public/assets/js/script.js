@@ -1,70 +1,76 @@
 $(document).ready(() => {
     
    //initializing tooltip
-   $("[data-toggle=\"tooltip\"]").tooltip();
+   // $("[data-toggle=\"tooltip\"]").tooltip();
 
-});
 
-$("#fun-fact-btn").on("click", () => {
 
-   console.log("clicked!");
-   // ajax api get request
-   $.ajax("/api/facts", {
-      type: "GET",
-   }).then(
-      (data) => {
-         console.log(data);
-         // set up appending data
-         const factContent = `<p><mark><strong>Fact: ${data.id } : </strong></mark> ${data.fact}</p>`;
+   $("#fun-fact-btn").on("click", () => {
+
+      console.log("clicked!");
+      // ajax api get request
+      $.ajax("/api/facts", {
+         type: "GET",
+      }).then(
+         (data) => {
+            console.log(data);
+            // set up appending data
+            const factContent = `<p><mark><strong>Fact: ${data.id } : </strong></mark> ${data.fact}</p>`;
  
-         // console.log(data)
-         console.log(factContent);
+            // console.log(data)
+            console.log(factContent);
  
-         // append the content onto modal
-         $(factContent).appendTo("body").modal();
+            // append the content onto modal
+            $(factContent).appendTo("body").modal();
  
-         location.reload;
-      }
-   );
-});
+            location.reload;
+         }
+      );
+   });
 
-$(userSpendBtn).on("click", (event) => {
-   event.preventDefault();
+   // const userSpendBtn = $("#text-enter-button");
 
+   // const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
 
-
-   // This line grabs the input from the textbox
-   const userSpendInput = $("#user-spend-input").val();
-
+   $(userSpendBtn).on("click", (event) => {
+      event.preventDefault();
 
 
-   console.log(`money spent: ${userSpendInput}`);
-   spendAmountSaved.push(userSpendInput);
-   console.log(spendAmountSaved);
 
-   localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
+      // This line grabs the input from the textbox
+      const userSpendInput = $("#user-spend-input").val();
 
 
-   const test = amexCard(userSpendInput);
 
-   console.log(test[0]);
-   console.log(test[1]);
-   console.log(test[2]);
-   //console.log(amexCard(userSpendInput));
-   //citiCard(userSpendInput);
-   // jetBlueCard(userSpendInput);
-   // console.log(userSpendInput);
+      console.log(`money spent: ${userSpendInput}`);
+      spendAmountSaved.push(userSpendInput);
+      console.log(spendAmountSaved);
 
-   $("tbody").append(`<tr><th>1</th><td>Amex</td><td>${test[0]}</td><td>${test[1]}</td><td>${test[2]}</td></tr>`);
-
-   // <tr>
-   //              <th scope="row">1</th>
-   //              <td>Amex</td>
-   //              <td>200</td>
-   //              <td>5x</td>
-   //              <td>4%</td>
-   //          </tr>
+      localStorage.setItem("spentAmount", JSON.stringify(spendAmountSaved));
 
 
+      const test = amexCard(userSpendInput);
+
+      console.log(test[0]);
+      console.log(test[1]);
+      console.log(test[2]);
+      //console.log(amexCard(userSpendInput));
+      //citiCard(userSpendInput);
+      // jetBlueCard(userSpendInput);
+      // console.log(userSpendInput);
+
+      $("tbody").append(`<tr><th>1</th><td>Amex</td><td>${test[0]}</td><td>${test[1]}</td><td>${test[2]}</td></tr>`);
+
+      // <tr>
+      //              <th scope="row">1</th>
+      //              <td>Amex</td>
+      //              <td>200</td>
+      //              <td>5x</td>
+      //              <td>4%</td>
+      //          </tr>
+
+
+
+   });
 
 });
