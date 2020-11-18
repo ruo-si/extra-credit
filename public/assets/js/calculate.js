@@ -86,8 +86,3 @@ const jetBlueCard = function (num1) {
 };
 
 // ================================================================
-
-// const amexFuncArray = [amexCard.cashBack(userSpendInput), amexCard.rewardsEarned(userSpendInput), amexCard.milesEarned(userSpendInput)];
-
-// module.exports = amexCard, citiCard, jetBlueCard, cardPerkCalc;
-
