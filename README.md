@@ -51,13 +51,13 @@
 
   ## Usage    
 
-   Extra Credit is a very intuitive application to use that simplifies your experience. There are 5 main buttons `Sign Up, My Wallet, Calculator,Credit Card Browser, & Fun Facts`. The each have the following functions:
+   Extra Credit is a very intuitive application to use that simplifies your experience. There are 5 main buttons `Sign Up, My Wallet, Calculator,Credit Card Browser, & Extra Credit`. The each have the following functions:
    
    * Sign Up: The user can enter their first and last names in the user input and press the sign up button. This will enter their name into the database and essentially create their account with a unique ID that tracks the selections inside of the `My Wallet` and the `Credit Card Browser`.
    * My Wallet: The user can view the selection of card they made inside of the `Credit Card Browser`.
    * Calculator: The user can enter in a dollar amount and calculate the rewards of the card(s) you want to apply for. It will show the benefits of each card instantly so the user can make an informed decision.
    * Credit Card Browser: Select a card and add it to the wallet so that the user can keep track of the credit cards that they would like to apply for.
-   * Fun Facts: A random fun fact about maintaining good credit and other valuable financial tips is generated for the user's benefit. Each time the button is pressed a new fact is shown.
+   * Extra Credit: A random fun fact about maintaining good credit and other valuable financial tips is generated for the user's benefit. Each time the button is pressed a new fact is shown.
  
    <!-- <br>
    <p align=center>   
