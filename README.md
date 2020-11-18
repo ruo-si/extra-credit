@@ -1,33 +1,51 @@
-![https://travis-ci.com/ronerlih/express-sequelize-box](https://travis-ci.com/ronerlih/express-sequelize-box.svg?branch=main&status=passed) ![https://app.codacy.com/gh/ronerlih/express-sequelize-box/dashboard](https://app.codacy.com/project/badge/Grade/d54fbe2005594f5884b61dbdf22ea604)
-# 📦 Express Sequelize box
+# Extra-Credit
 
-## To-Do: Readme!
+  ![express](https://img.shields.io/npm/l/express)
+  ![Extra-Credit](https://img.shields.io/github/languages/top/rialee/extra-credit)
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
-## Use
-- Fork or clone and copy what you need
+  - by *Skyler Rencher, Victoria Lee, Cielle Carlton, Richard Katsnelson*
+  
+  ## Description    
 
-## env vars
-- for production set on heroku: https://dashboard.heroku.com/apps/<app-name>/settings -> reveal env vars
-- locally: creat a `.env` file with key and value pair in form/url encoding `SECRET_KEY=val`
-- connection code on models/index.js: !['assets/connection.png'](assets/connection.png)
+  If you want to learn about good credit boot up the application. 
 
-## Folder structure
-!['assets/structure.png'](assets/structure.png)
+  ## Table Of Contents    
 
-## CI
-- travis: travis.io
-- code coverage: codacy.com
-- monitor on: https://ronerlih.loggly.com/search?terms=tag:heroku&from=-20m&until=now&source_group=&newtab=1#terms=&from=2020-11-07T12:03:00.296Z&until=2020-11-07T13:03:00.296Z&source_group=
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Installation    
 
-## diagram expmles: 
-!["assets/PROJECT-02-diagrams-templates.png"](assets/PROJECT-02-diagrams-templates.png)
+  download all of the source files and the required npms.
 
-## To-Do:
-- write tests (Jest / mocha+chai)
-   - send test reports to code covarage 
+  ## Usage    
 
-- log (winston/ bunyan/ log4js/ morgan)
-   - dashborad monitor + notifications
+  You enter in a dollar amount and calculate the rewards of the card(s) you want to apply for and add to your wallet."
 
-## Further
-- express best practices: https://expressjs.com/en/advanced/best-practice-performance.html
+  ## License    
+
+  The express is covered under the following license: ![express](https://img.shields.io/npm/l/express)
+
+  ## Contributing     
+
+  If you are interested in contributing to this project please adhere to the set of guidelines set forth by the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/). If any questions about the contributor guidelines feel free to contact me at skyler.rencher@gmail.com.
+
+      
+  
+
+  ## Tests    
+
+  Utilizing Travis.yml helped to keep the code functional
+
+  ## Questions    
+
+  If you have any questions about the project feel free to reach out to me on via email: skyler.rencher@gmail.com or via Git Hub: https://github.com/rialee.
+  
+  ## Links
+
+  * [Extra-Credit Repo](https://github.com/rialee/extra-credit)
