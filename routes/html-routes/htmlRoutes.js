@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+// eslint-disable-next-line no-unused-vars
 const db = require("../../models");
 
 // // routing (html) /commnets
@@ -24,7 +25,7 @@ const db = require("../../models");
 
 // Routes
 router.get("/", (req, res) => {
-    res.render("index");
- });
+   res.render("index");
+});
 
 module.exports = router;

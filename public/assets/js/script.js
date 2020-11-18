@@ -4,18 +4,20 @@ $(document).ready(() => {
    // $("[data-toggle=\"tooltip\"]").tooltip();
 
 
+   console.log("clicked!");
+   // ajax api get request
+   $.ajax("/api/facts", {
+      type: "GET",
+   }).then(
+      (data) => {
+         console.log(data);
 
-   $("#fun-fact-btn").on("click", () => {
+         // set up appending data
+         const randomFact= data[Math.floor(Math.random()*data.length)];
 
-      console.log("clicked!");
-      // ajax api get request
-      $.ajax("/api/facts", {
-         type: "GET",
-      }).then(
-         (data) => {
-            console.log(data);
-            // set up appending data
-            const factContent = `<p><mark><strong>Fact: ${data.id } : </strong></mark> ${data.fact}</p>`;
+         console.log(randomFact);
+         const factContent = `<p><mark><strong>Fact: ${randomFact.id } : </strong></mark> ${randomFact.fact}</p>`;
+
  
             // console.log(data)
             console.log(factContent);

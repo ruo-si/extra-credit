@@ -1,3 +1,4 @@
+
 /* eslint-disable no-unused-vars */
 const userSpendBtn = $("#text-enter-button");
 
@@ -28,9 +29,11 @@ const amexCard = function (num1) {
       return result.toFixed(2) + " miles";
    };
 
+
    return [cashBack(), rewardsEarned(), milesEarned()];
 
-};
+// };
+
 
 // Citi Card Function that calculates the perks 
 const citiCard = function (num1) {
@@ -55,9 +58,11 @@ const citiCard = function (num1) {
       return result.toFixed(2) + " miles";
    };
 
+
    return [cashBack(), rewardsEarned(), milesEarned()];
 
-};
+// };
+
 
 // Citi Card Function that calculates the perks 
 const jetBlueCard = function (num1) {
@@ -82,8 +87,11 @@ const jetBlueCard = function (num1) {
       return result.toFixed(2) + " miles";
    };
 
+
    return [cashBack(), rewardsEarned(), milesEarned()];
 
-};
+// };
+
 
 // ================================================================
+

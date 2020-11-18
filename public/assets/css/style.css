@@ -17,9 +17,7 @@ body {
 
 .btn-container {
   padding-top: 5rem;
-  /* border: 1px solid #ccc; */
   justify-content: center;
-  /* transform: translate(-50%, -50%); */
 }
 
 .category {
@@ -44,10 +42,9 @@ body {
   transition: .8s ease-in-out;
   background: #4F95DA;
   color: rgb(255, 255, 255);
-  animation:shake 0.8s;
+  animation:shake 4s;
   animation-iteration-count: infinite;
 }
-
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -62,7 +59,6 @@ body {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
 
 .label {
   border: none;
