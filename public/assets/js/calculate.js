@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const userSpendBtn = $("#text-enter-button");
 
 const spendAmountSaved = JSON.parse(localStorage.getItem("spentAmount")) || [];
