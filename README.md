@@ -1,5 +1,6 @@
 # Extra-Credit
-
+   ![https://travis-ci.com/github/rialee/extra-credit/builds/202278627](https://travis-ci.com/rialee/extra-credit.svg?branch=main&status=passed)
+   ![https://app.codacy.com/gh/rialee/extra-credit/dashboard](https://app.codacy.com/project/badge/Grade/d54fbe2005594f5884b61dbdf22ea604)
   ![express](https://img.shields.io/npm/l/express)
   ![Extra-Credit](https://img.shields.io/github/languages/top/rialee/extra-credit)
   [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
@@ -49,3 +50,5 @@
   ## Links
 
   * [Extra-Credit Repo](https://github.com/rialee/extra-credit)
+  * [Extra-Credit Application](https://github.com/rialee/extra-credit)
+  * [Extra-Credit Demo Video](https://github.com/rialee/extra-credit)
