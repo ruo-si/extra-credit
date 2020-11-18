@@ -58,9 +58,9 @@ $(document).ready(() => {
       // jetBlueCard(userSpendInput);
       // console.log(userSpendInput);
 
-      $("tbody").append(`<tr><th>1</th><td>Amex</td><td>${amexResult[0]}</td><td>${amexResult[1]}</td><td>${amexResult[2]}</td></tr>`);
-      $("tbody").append(`<tr><th>2</th><td>Citi</td><td>${citiResult[0]}</td><td>${citiResult[1]}</td><td>${citiResult[2]}</td></tr>`);
-      $("tbody").append(`<tr><th>3</th><td>JetBlue</td><td>${jetBlueResult[0]}</td><td>${jetBlueResult[1]}</td><td>${jetBlueResult[2]}</td></tr>`);
+      $("#perks-results").append(`<tr><th>1</th><td>Amex</td><td>${amexResult[0]}</td><td>${amexResult[1]}</td><td>${amexResult[2]}</td></tr>`);
+      $("#perks-results").append(`<tr><th>2</th><td>Citi</td><td>${citiResult[0]}</td><td>${citiResult[1]}</td><td>${citiResult[2]}</td></tr>`);
+      $("#perks-results").append(`<tr><th>3</th><td>JetBlue</td><td>${jetBlueResult[0]}</td><td>${jetBlueResult[1]}</td><td>${jetBlueResult[2]}</td></tr>`);
 
 
    });
