@@ -36,6 +36,9 @@ $("#fun-fact-btn").on("click", () => {
 $(userSpendBtn).on("click", (event) => {
    event.preventDefault();
 
+   // clear previous data from table
+   $("#perks-results").html("");
+
    // This line grabs the input from the textbox
    const userSpendInput = $("#user-spend-input").val();
    console.log(`money spent: ${userSpendInput}`);
